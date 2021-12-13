@@ -18,22 +18,20 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ShowMessage (screenMessage, KeyCode.RightArrow);
-        ShowMessage (screenMessage, KeyCode.LeftArrow);
-        ShowMessage (screenMessage, KeyCode.UpArrow);
-        ShowMessage (screenMessage, KeyCode.DownArrow);
-        ShowMessage (screenMessage, KeyCode.Space);
+        ShowMessage (KeyCode.RightArrow, "Derecha");
+        ShowMessage (KeyCode.LeftArrow, "Izquierda");
+        ShowMessage (KeyCode.UpArrow, "Arriba");
+        ShowMessage (KeyCode.DownArrow, "Abajo");
+        ShowMessage (KeyCode.Space, "Booing");
     }
-    public void ShowMessage(string message, KeyCode key)
+    public void ShowMessage(KeyCode key, string message)
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(key))
         {
-
-            screenMessage = "Derecha";
             ImageText.text = message;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+       /* if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
 
             screenMessage = "Izquierda";
@@ -60,6 +58,6 @@ public class PlayerController : MonoBehaviour
 
             screenMessage = "SShhh";
             ImageText.text = message;
-        }
+        }*/
     }
 }
