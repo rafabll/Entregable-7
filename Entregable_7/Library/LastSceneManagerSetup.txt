@@ -1,5 +1,6 @@
 sceneSetups:
-- path: Assets/Scenes/MainScene.unity
+- path: D:/Rafel_Bover/Proyectos_multimedia/github/Proyecto 4 - UI DEIM/Assets/Scenes/Proyecto
+    4.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

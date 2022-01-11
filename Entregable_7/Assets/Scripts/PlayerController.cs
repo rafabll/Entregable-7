@@ -30,34 +30,5 @@ public class PlayerController : MonoBehaviour
         {
             ImageText.text = message;
         }
-
-       /* if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-
-            screenMessage = "Izquierda";
-            ImageText.text = message;
-        }
-
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-
-            screenMessage = "Arriba";
-            ImageText.text = message;
-        }
-
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-
-
-            screenMessage = "Abajo";
-            ImageText.text = message;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-
-            screenMessage = "SShhh";
-            ImageText.text = message;
-        }*/
     }
 }
